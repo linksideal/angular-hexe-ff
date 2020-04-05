@@ -33,4 +33,20 @@ export class QuestionnaireComponent implements OnInit {
     this.activeQuestion-=1;
   }
 
+  jumpToResult(){
+    this.activeQuestion=-1;
+  }
+
+  jumpToFirstQuestion(){
+    this.activeQuestion=0;
+  }
+
+  showResult(){
+    return this.activeQuestion == -1;
+  }
+
+  showQuestion(questionId){
+    return this.activeQuestion == questionId;
+  }
+
 }
