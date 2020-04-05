@@ -1,11 +1,14 @@
-<div *ngFor="let question of questions | async">
-
-  <h3>
-    {{ question.text }}
-  </h3>
-
-  <app-question
-  [question]="question">
-  </app-question>
-
+<div *ngFor="let question of questions | async; first as isFirst; last as isLast">
+  <div *ngIf="activeQuestion == question.id">
+    <app-question
+    [question]="question">
+    </app-question>
+    <button *ngIf="!isLast" (click)="nextQuestion()">
+      Weiter
+    </button>
+    <button *ngIf="!isFirst" (click)="previousQuestion()">
+      Zurück
+    </button>
+  </div>
+  
 </div>

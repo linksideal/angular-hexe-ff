@@ -1,3 +1,5 @@
+<img [src]="imgUrl">
+
 <p>
 {{ question.text }}
 </p>
@@ -5,7 +7,7 @@
 <div *ngFor="let answer of answers">
 
   <label class="container">{{ answer.text }}
-    <input name="question.id" type="radio" checked="checked" name="radio">
+    <input type="radio" checked="checked" name="radio">
     <span class="checkmark"></span>
   </label>
 

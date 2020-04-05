@@ -1,7 +1,8 @@
 [
   {
     "text": "Welche Gedanken kommen dir in den Sinn, wenn du morgens durch Vogelgezwitscher von Küken geweckt wirst?",
-    "id": 1,
+    "id": 0,
+    "img": "kueken.jpg",
     "answers": [
       {
         "text": "Wenn ich eines der Küken erwische, drehe ich ihm den Hals um.",
@@ -19,7 +20,8 @@
   },
   {
     "text": "Du machst einen Waldspaziergang und stolperst leicht, weil du an einem heruntergefallenen Ast hängen bleibst. Wie reagierst du?",
-    "id": 2,
+    "id": 1,
+    "img": "tdb.jpg",
     "answers": [
       {
         "text": "Wenn ich jetzt eine Kreissäge zur Hand hätte, würde ich den ganzen Wald abholzen.",
