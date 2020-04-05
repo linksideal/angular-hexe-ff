@@ -7,7 +7,7 @@
 <div *ngFor="let answer of answers">
 
   <label class="container">{{ answer.text }}
-    <input type="radio" checked="checked" name="radio">
+    <input type="radio" checked="checked" [name]="inputGroup()">
     <span class="checkmark"></span>
   </label>
 

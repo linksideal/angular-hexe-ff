@@ -25,4 +25,8 @@ export class QuestionComponent implements OnInit {
     this.imgUrl = baseUrl + this.question.img;
   }
 
+  inputGroup(){
+    return "question_" + this.question.id;
+  }
+
 }
