@@ -1,0 +1,4 @@
+<label class="container">{{ option.text }}
+  <input type="radio" [id]="option.wert" [name]="inputGroup" (change)="inputOnChange($event.target.id)"> 
+  <span class="checkmark"></span>
+</label>

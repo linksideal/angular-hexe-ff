@@ -4,11 +4,11 @@
 {{ question.text }}
 </p>
 
-<div *ngFor="let answer of answers">
+<div *ngFor="let option of options">
 
-  <label class="container">{{ answer.text }}
-    <input type="radio" checked="checked" [name]="inputGroup()">
-    <span class="checkmark"></span>
-  </label>
+  <app-option 
+    [option]="option"
+    [inputGroup]="inputGroup(">
+  </app-option>
 
 </div>

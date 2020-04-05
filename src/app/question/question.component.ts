@@ -8,16 +8,16 @@ import { Component, OnInit, Input } from '@angular/core';
 export class QuestionComponent implements OnInit {
 
   @Input() question;
-  answers;
+  options;
   imgUrl;
 
   constructor() { }
 
   ngOnInit(){
-    this.answers = this.question.answers;
+    this.options = this.question.options;
     this.setImgUrl();
     
-    console.log("Answers geladen");
+    console.log("Options geladen");
   }
 
   setImgUrl(){
