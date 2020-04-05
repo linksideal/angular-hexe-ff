@@ -1,0 +1,11 @@
+<div *ngFor="let question of questions | async">
+
+  <h3>
+    {{ question.text }}
+  </h3>
+
+  <app-question
+  [question]="question">
+  </app-question>
+
+</div>

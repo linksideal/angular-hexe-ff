@@ -1,0 +1,38 @@
+[
+  {
+    "text": "Welche Gedanken kommen dir in den Sinn, wenn du morgens durch Vogelgezwitscher von Küken geweckt wirst?",
+    "id": 1,
+    "answers": [
+      {
+        "text": "Wenn ich eines der Küken erwische, drehe ich ihm den Hals um.",
+        "wert": -1
+      },
+      {
+        "text": "Das Gezwitscher ist eigentlich ganz nett, aber die penetranten Küken nerven schon etwas.",
+        "wert": 0
+      },
+      {
+        "text": "Oh wie süß...am liebsten würde ich mich zu den Küken ins Nest setzen und mit zwitschern.",
+        "wert": 1
+      }
+    ]
+  },
+  {
+    "text": "Du machst einen Waldspaziergang und stolperst leicht, weil du an einem heruntergefallenen Ast hängen bleibst. Wie reagierst du?",
+    "id": 2,
+    "answers": [
+      {
+        "text": "Wenn ich jetzt eine Kreissäge zur Hand hätte, würde ich den ganzen Wald abholzen.",
+        "wert": -1
+      },
+      {
+        "text": "Och Mensch, die heruntergefallenen Äste könnte aber schon mal jemand zur Seite räumen.",
+        "wert": 0
+      },
+      {
+        "text": "Oh mein Gott! Ein Baum hat einen Ast verloren. Ich muss unbedingt den Baum finden, vielleicht wächst er wieder an.",
+        "wert": 1
+      }
+    ]
+  }
+]
