@@ -36,5 +36,24 @@
         "wert": 1
       }
     ]
+  },
+  {
+    "text": "Während einer Waldwanderung machst du Rast auf einer Lichtung. Als du gemütlich Brotzeit machst, juckt es plötzlich an deinem Fuß und du siehst, wie eine Feuerameise über dich krabbelt. Wie reagierst du?",
+    "id": 2,
+    "img": "ast.jpeg",
+    "options": [
+      {
+        "text": "Du schreckst auf, hältst Ausschau nach dem Ameisenhaufen und springst mit geraumer Wucht und beiden Füßen hinein.",
+        "wert": -1
+      },
+      {
+        "text": "Du verscheuchst die Ameise, packst deine Sachen zusammen und suchst dir einen anderen Ort zum rasten.",
+        "wert": 0
+      },
+      {
+        "text": "Du heißt die Ameise willkommen und reibst deine Beine mit Limonade ein, damit sich noch mehr Ameisen an deiner Haut erfreuen können.",
+        "wert": 1
+      }
+    ]
   }
 ]
