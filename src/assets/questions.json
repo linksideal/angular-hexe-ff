@@ -66,11 +66,30 @@
         "wert": -1
       },
       {
-        "text": "Erschreckt hüpfst du einbeinig aus dem Wasser und versuchst den Krebs abzuschütteln.",
+        "text": "Erschreckt hüpfst du auf einem Bein aus dem Wasser und versuchst den Krebs abzuschütteln.",
         "wert": 0
       },
       {
-        "text": "Erschreckt hüpfst du einbeinig aus dem Wasser und suchst ein schattiges Plätzchen, wo dich sich niederlässt um dem Krebs Raum und Zeit zu geben, mit deinem Zeh zu spielen.",
+        "text": "Erschreckt hüpfst du auf einem Bein aus dem Wasser und suchst ein schattiges Plätzchen, wo du dich niederlässt um dem Krebs Raum und Zeit zu geben, mit deinem Zeh zu spielen.",
+        "wert": 1
+      }
+    ]
+  },
+  {
+    "text": "Du kämpfst dich durch ein besonders dichtes Waldstück und stehst völlig unvorbereitet vor einem zwei Meter großen Grizzly Bear. Was geht dir durch den Kopf?",
+    "id": 4,
+    "img": "krebs.jpg",
+    "options": [
+      {
+        "text": "Wo ist mein Taschenmesser?",
+        "wert": -1
+      },
+      {
+        "text": "Nicht bewegen, dann interessiert er sich nicht für!",
+        "wert": 0
+      },
+      {
+        "text": "Oh ist der süüüß!",
         "wert": 1
       }
     ]
