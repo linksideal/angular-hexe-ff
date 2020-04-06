@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { AnswerService } from '../answer.service';
 
 @Component({
@@ -8,14 +8,11 @@ import { AnswerService } from '../answer.service';
 })
 export class ResultComponent implements OnInit {
 
-  result;
+  @Input() result;
 
-  constructor(
-    private answerService: AnswerService
-  ) { }
+  constructor( ) { }
 
   ngOnInit() {
-    this.result = this.answerService.sumUp();
   }
 
 }

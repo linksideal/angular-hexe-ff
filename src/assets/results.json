@@ -1,0 +1,38 @@
+[
+  {
+    "werte": [
+      -5,
+      -4
+    ],
+    "text": "Du bist ein Hexe mit versteinertem Herz! Es besteht nur noch dann Hoffnung, wenn du Freunde wie den Papagei oder die Schildkröte um dich hast, die dir den Weg zurück zeigen können."
+  },
+  {
+    "werte": [
+      -3,
+      -2
+    ],
+    "text": "Es ist höchste Vorsicht geboten! Dein Herz weist bereits erste Versteinerungen auf. Deine Verwandlung zur Hexe hat bereits begonnen, aber du kannst es noch aus eigenen Stücken schaffen die Wende herbei zu führen."
+  },
+  {
+    "werte": [
+      -1,
+      0,
+      1
+    ],
+    "text": "Alles ist offen! Du befindest dich gerade an einer Kreuzung. Hör auf dein Herz und du wirst den richtigen Weg einschlagen."
+  },
+  {
+    "werte": [
+      2,
+      3
+    ],
+    "text": "Du verfügst über ein gutes Herz. Dein Traum Prinzessin zu werden, könnte eines Tages in Erfüllung gehen."
+  },
+  {
+    "werte": [
+      4,
+      5
+    ],
+    "text": "Du bist ein Prinzessin durch und durch! Wenn dein Herz noch weicher wird, läuft es gefahr zu Pudding zu werden."
+  }
+]

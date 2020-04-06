@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { AnswerService } from '../answer.service';
 
 @Component({
   selector: 'app-questionnaire',
@@ -10,19 +11,31 @@ export class QuestionnaireComponent implements OnInit {
 
   questions;
   activeQuestion;
+  results;
   
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private answerService: AnswerService
     ) { }
 
   ngOnInit(){
+    this.setUpAnswerService();
     this.questions = this.getQuestions();
-    console.log("Questions geladen");
     this.activeQuestion = 0;
+    this.results = this.getResults();
+  }
+
+  setUpAnswerService(){
+    this.answerService.addAnswer(0);
+    this.answerService.addAnswer(0);
   }
 
   private getQuestions(){
     return this.http.get('/assets/questions.json');
+  }  
+
+  private getResults(){
+    return this.http.get('/assets/results.json');
   }
 
   nextQuestion(){
@@ -41,8 +54,19 @@ export class QuestionnaireComponent implements OnInit {
     this.activeQuestion=0;
   }
 
-  showResult(){
+  showResults(){
+    console.log("ActiveQuestion: " + this.activeQuestion);
     return this.activeQuestion == -1;
+  }  
+
+  showResult(result){
+    let sum = this.answerService.sumUp();
+    for(let wert of result.werte){
+      if(sum == wert){
+        return true;
+      }
+    }
+    return false;
   }
 
   showQuestion(questionId){

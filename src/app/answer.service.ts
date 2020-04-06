@@ -1,24 +1,34 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+
+export interface Result {
+  results: number[];
+  text: string;
+}
 
 @Injectable()
 export class AnswerService {
-  answers: number[] = [0,0,0,0,0];
+  answers = [];
 
-  setAnswer(questionId, wert){
-    this.answers[questionId] = wert;
+  addAnswer(wert) {
+    this.answers.push(wert);
   }
 
-  getAnswer(questionId){
+  setAnswer(questionId, wert) {
+    this.answers.fill(wert, questionId, questionId + 1);
+  }
+
+  getAnswer(questionId) {
     return this.answers[questionId];
   }
 
-  sumUp(){
-    var sum = this.answers.reduce((acc, cur) => acc + cur, 0);
+  sumUp() {
+    let sum: number = 0;
+    for (let answer of this.answers) {
+      sum += parseInt(answer);
+    }
     return sum;
   }
 
-  constructor() { }
-
-
-
+  constructor(private http: HttpClient) {}
 }

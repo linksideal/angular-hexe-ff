@@ -1,24 +1,26 @@
 <div *ngFor="let question of questions | async; first as isFirst; last as isLast">
-  <div *ngIf="showQuestion(question.id)">
-    <app-question
-    [question]="question">
-    </app-question>
-    <button *ngIf="!isFirst" (click)="previousQuestion()">
+	<div *ngIf="showQuestion(question.id)">
+		<app-question [question]="question">
+		</app-question>
+		<button *ngIf="!isFirst" (click)="previousQuestion()">
       Zurück
     </button>
-    <button *ngIf="!isLast" (click)="nextQuestion()">
+		<button *ngIf="!isLast" (click)="nextQuestion()">
       Weiter
     </button>
-    <button *ngIf="isLast" (click)="jumpToResult()">
+		<button *ngIf="isLast" (click)="jumpToResult()">
       Zum Ergebnis
     </button>
-  </div>  
+	</div>
 </div>
-<div *ngIf="showResult()">
-  <app-result>
-  </app-result>
-
-  <button *ngIf="showResult()" (click)="jumpToFirstQuestion()">
+<div *ngIf="showResults()">
+	<div *ngFor="let result of results | async;">
+    <div *ngIf="showResult(result)">
+      <app-result [result]="result">
+	    </app-result>
+    </div>
+	</div>
+	<button (click)="jumpToFirstQuestion()">
     Nochmal von vorne!
   </button>
 </div>
