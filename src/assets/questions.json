@@ -40,10 +40,10 @@
   {
     "text": "Während einer Waldwanderung machst du Rast auf einer Lichtung. Als du gemütlich Brotzeit machst, juckt es plötzlich an deinem Fuß und du siehst, wie eine Feuerameise über dich krabbelt. Wie reagierst du?",
     "id": 2,
-    "img": "ast.jpeg",
+    "img": "ameise.jpg",
     "options": [
       {
-        "text": "Du schreckst auf, hältst Ausschau nach dem Ameisenhaufen und springst mit geraumer Wucht und beiden Füßen hinein.",
+        "text": "Du schreckst auf, hältst Ausschau nach dem Ameisenhaufen und springst mit viel Schwung beidbeinig hinein.",
         "wert": -1
       },
       {
@@ -52,6 +52,25 @@
       },
       {
         "text": "Du heißt die Ameise willkommen und reibst deine Beine mit Limonade ein, damit sich noch mehr Ameisen an deiner Haut erfreuen können.",
+        "wert": 1
+      }
+    ]
+  },
+  {
+    "text": "Nach einem langen Tag des Wanderns nimmst du ein erfrischendes Bad in einem kleines Fluss. Plötzlich verspührst du ein stechenden Schmerz an deinem Fuß. Wie du herab siehst, bemerkst du, dass eine kleiner Flußkrebs deinen kleinen Zeh in seiner Schere hält. Wie reagierst du?",
+    "id": 3,
+    "img": "krebs.jpg",
+    "options": [
+      {
+        "text": "Vor lauter Wut ergreifst du einen großen Stein und wirfst ihn nach dem Krebs. Dadurch triffst du deinen Fuß und wirst noch wütender.",
+        "wert": -1
+      },
+      {
+        "text": "Erschreckt hüpfst du einbeinig aus dem Wasser und versuchst den Krebs abzuschütteln.",
+        "wert": 0
+      },
+      {
+        "text": "Erschreckt hüpfst du einbeinig aus dem Wasser und suchst ein schattiges Plätzchen, wo dich sich niederlässt um dem Krebs Raum und Zeit zu geben, mit deinem Zeh zu spielen.",
         "wert": 1
       }
     ]
