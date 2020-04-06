@@ -16,8 +16,6 @@ export class QuestionComponent implements OnInit {
   ngOnInit(){
     this.options = this.question.options;
     this.setImgUrl();
-    
-    console.log("Options geladen");
   }
 
   setImgUrl(){

@@ -19,15 +19,17 @@ export class QuestionnaireComponent implements OnInit {
     ) { }
 
   ngOnInit(){
+    this.questions = this.getQuestions();    
     this.setUpAnswerService();
-    this.questions = this.getQuestions();
     this.activeQuestion = 0;
     this.results = this.getResults();
   }
 
   setUpAnswerService(){
-    this.answerService.addAnswer(0);
-    this.answerService.addAnswer(0);
+    let numberOfQuestion = Object.keys(this.questions).length;
+    for (let i = 0; i < numberOfQuestion; i++) {
+      this.answerService.addAnswer(0);
+    }
   }
 
   private getQuestions(){
@@ -55,7 +57,6 @@ export class QuestionnaireComponent implements OnInit {
   }
 
   showResults(){
-    console.log("ActiveQuestion: " + this.activeQuestion);
     return this.activeQuestion == -1;
   }  
 

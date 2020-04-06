@@ -10,7 +10,7 @@ export interface Result {
 export class AnswerService {
   answers = [];
 
-  addAnswer(wert) {
+  public addAnswer(wert) {
     this.answers.push(wert);
   }
 
