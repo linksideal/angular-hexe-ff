@@ -1,3 +1,8 @@
+<div class="box">
+  <h1>
+    Hexe oder Prinzessin?
+  </h1>
+</div>
 <div *ngFor="let question of questions | async; first as isFirst; last as isLast">
 	<div *ngIf="showQuestion(question.id)">
 		<app-question [question]="question">

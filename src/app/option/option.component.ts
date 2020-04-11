@@ -21,8 +21,8 @@ export class OptionComponent implements OnInit {
 
   setAnswer(wert){
     this.answerService.setAnswer(this.questionId, wert);
+    console.log("wert: " + wert);
     console.log("neues Service Wert: " + this.answerService.getAnswer(this.questionId));
-    console.log("neues Summe: " + this.answerService.sumUp());
   }
 
 }

@@ -26,8 +26,9 @@ export class QuestionnaireComponent implements OnInit {
   }
 
   setUpAnswerService(){
-    let numberOfQuestion = Object.keys(this.questions).length;
+    let numberOfQuestion = 5;
     for (let i = 0; i < numberOfQuestion; i++) {
+      console.log(i);
       this.answerService.addAnswer(0);
     }
   }
