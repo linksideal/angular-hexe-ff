@@ -3,6 +3,12 @@
   text-align: center;
   padding: 20px;
   border-radius: 10px;
-  max-width: 600px;
-  margin: auto;
+  margin: auto;  
+  width: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+  .box{
+    width: 768px;
+  }
 }
