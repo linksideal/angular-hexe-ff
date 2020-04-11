@@ -1,9 +1,14 @@
 <div class="box">
 	<img [src]="imgUrl">
 
-	<p>
-		{{ question.text }}
-	</p>
+  <div  class="question-text">
+    <h3>
+      Frage
+    </h3>
+    <p>
+      {{ question.text }}
+    </p>
+  </div>
 
 	<div *ngFor="let option of options">
 
