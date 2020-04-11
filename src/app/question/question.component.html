@@ -1,15 +1,14 @@
-<img [src]="imgUrl">
+<div class="question">
+	<img [src]="imgUrl">
 
-<p>
-{{ question.text }}
-</p>
+	<p>
+		{{ question.text }}
+	</p>
 
-<div *ngFor="let option of options">
+	<div *ngFor="let option of options">
 
-  <app-option 
-    [option]="option"
-    [inputGroup]="inputGroup()"
-    [questionId]="question.id">
-  </app-option>
+		<app-option [option]="option" [inputGroup]="inputGroup()" [questionId]="question.id">
+		</app-option>
 
+	</div>
 </div>
