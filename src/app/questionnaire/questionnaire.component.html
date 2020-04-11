@@ -3,15 +3,21 @@
 		<app-question [question]="question">
 		</app-question>
 		<div class="box">
-			<button *ngIf="!isFirst" (click)="previousQuestion()">
-      Zurück
-    </button>
-			<button *ngIf="!isLast" (click)="nextQuestion()">
-      Weiter
-    </button>
-			<button *ngIf="isLast" (click)="jumpToResult()">
-      Zum Ergebnis
-    </button>
+      <button *ngIf="!isFirst" (click)="previousQuestion()" class="button zurueck">
+        <span>
+          Zurück
+        </span>
+      </button>
+      <button *ngIf="!isLast" (click)="nextQuestion()" class="button vor">
+        <span>
+          Weiter
+        </span>
+      </button>
+      <button *ngIf="isLast" (click)="jumpToResult()" class="button vor">
+          <span>
+            Zum Ergebnis
+          </span>
+      </button>
 		</div>
 	</div>
 </div>
@@ -22,9 +28,11 @@
 			</app-result>
 		</div>
 	</div>
-  <div class="box">
-	<button (click)="jumpToFirstQuestion()">
-    Nochmal von vorne!
+	<div class="box">
+		<button (click)="jumpToFirstQuestion()" class="button zurueck">
+      <span>
+        Nochmal von vorne!
+      </span>
   </button>
-  </div>
+	</div>
 </div>

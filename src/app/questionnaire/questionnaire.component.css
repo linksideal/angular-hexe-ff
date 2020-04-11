@@ -1,0 +1,64 @@
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #25997c;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1em;
+  padding: 15px;
+  width: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: inherit;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button.vor span:after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button.zurueck span:before {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.button.vor span:after {
+  content: '\203a';
+}
+
+.button.zurueck span:before {
+  content: '\2039';
+}
+
+.button.vor:hover span {
+  padding-right: 25px;
+}
+
+.button.zurueck:hover span {
+  padding-left: 25px;
+}
+
+.button.vor:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button.zurueck:hover span:before {
+  opacity: 1;
+  left: 0;
+}
