@@ -3,15 +3,35 @@
 
 <head>
 	<link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 
 <body>
-  <div class="loading">
-    test
+	<div id="overlay">
+		<div id="img">
+			<img src="https://cdn.jsdelivr.net/gh/linksideal/angular-hexe-ff@master/src/assets/img/hexe-games-loading-screen.png">
+    </div>
   </div>
-	<app-questionnaire>
-	</app-questionnaire>
+  <div class="box" *ngIf="gameStarted == 0">
+    <h3>Herzlich Willkommen im Königreich Fickersloh</h3>
+    <p style="text-align:justify;">
+      Das Königreich Fickersloh ist in Aufruhr:<br>
+      Prinzessin Ficki Fack, die geliebte Tochter des Königs, ist verschwunden.<br><br>
+      Um sie zu finden hat der König eine Belohnung von 5000 ₿ ausgeschrieben.<br>
+      Allerdings wird vermutet, dass sich das Verhalten und das Aussehen der Prinzessin stark verändert haben.<br>
+      Manche sagen sogar, dass sie jetzt als Hexe durch die Wälder des Königreichs irrt.<br>
+      <br>
+      Von der hohen Belohnung angelockt kommen zum Bedauern des Königs Gauner und Betrüger in die Burg und präsentieren falsche Prinzessinen.<br>
+      Um sich sicher sein zu können, dass es sich um seine Tochter handelt, hat der König von den führenden Wissenschaftlern des Königreichs einen Test entwickeln lassen. 
+    </p>
+    <button (click)="startGame()" class="button vor">
+      <span>
+        Test starten
+      </span>
+  </button>
+  </div>
+  <app-questionnaire *ngIf="gameStarted == 1">
+  </app-questionnaire>
 </body>
 
 </html>
