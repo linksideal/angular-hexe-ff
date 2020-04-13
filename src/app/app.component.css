@@ -1,0 +1,8 @@
+.loading{
+    -webkit-animation: fadein 5s linear 1 normal forwards;
+}
+
+@-webkit-keyframes fadein{
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
