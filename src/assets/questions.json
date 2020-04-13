@@ -5,12 +5,12 @@
     "img": "kueken.jpg",
     "options": [
       {
-        "text": "Wenn ich eines der Küken erwische, drehe ich ihm den Hals um.",
-        "wert": -1
-      },
-      {
         "text": "Das Gezwitscher ist eigentlich ganz nett, aber die penetranten Küken nerven schon etwas.",
         "wert": 0
+      },
+      {
+        "text": "Wenn ich eines der Küken erwische, drehe ich ihm den Hals um.",
+        "wert": -1
       },
       {
         "text": "Oh wie süß...am liebsten würde ich mich zu den Küken ins Nest setzen und mit zwitschern.",
@@ -24,16 +24,16 @@
     "img": "ast.jpeg",
     "options": [
       {
+        "text": "Oh mein Gott! Ein Baum hat einen Ast verloren. Ich muss unbedingt den Baum finden, vielleicht wächst er wieder an.",
+        "wert": 1
+      },
+      {
         "text": "Wenn ich jetzt eine Kreissäge zur Hand hätte, würde ich den ganzen Wald abholzen.",
         "wert": -1
       },
       {
         "text": "Och Mensch, die heruntergefallenen Äste könnte aber schon mal jemand zur Seite räumen.",
         "wert": 0
-      },
-      {
-        "text": "Oh mein Gott! Ein Baum hat einen Ast verloren. Ich muss unbedingt den Baum finden, vielleicht wächst er wieder an.",
-        "wert": 1
       }
     ]
   },
@@ -62,16 +62,16 @@
     "img": "krebs.jpg",
     "options": [
       {
-        "text": "Vor lauter Wut ergreifst du einen großen Stein und wirfst ihn nach dem Krebs. Dadurch triffst du deinen Fuß und wirst noch wütender.",
-        "wert": -1
-      },
-      {
         "text": "Erschreckt hüpfst du auf einem Bein aus dem Wasser und versuchst den Krebs abzuschütteln.",
         "wert": 0
       },
       {
         "text": "Erschreckt hüpfst du auf einem Bein aus dem Wasser und suchst ein schattiges Plätzchen, wo du dich niederlässt um dem Krebs Raum und Zeit zu geben, mit deinem Zeh zu spielen.",
         "wert": 1
+      },
+      {
+        "text": "Vor lauter Wut ergreifst du einen großen Stein und wirfst ihn nach dem Krebs. Dadurch triffst du deinen Fuß und wirst noch wütender.",
+        "wert": -1
       }
     ]
   },
@@ -81,16 +81,16 @@
     "img": "baer.jpeg",
     "options": [
       {
-        "text": "Wo ist mein Taschenmesser?",
-        "wert": -1
+        "text": "Oh ist der süüüß!",
+        "wert": 1
       },
       {
         "text": "Nicht bewegen, dann interessiert er sich nicht für!",
         "wert": 0
       },
       {
-        "text": "Oh ist der süüüß!",
-        "wert": 1
+        "text": "Wo ist mein Taschenmesser?",
+        "wert": -1
       }
     ]
   }
